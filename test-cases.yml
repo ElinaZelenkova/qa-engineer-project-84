@@ -322,6 +322,6 @@
     - Протестировать основные функции
   expected-result: |
     Изменение толщины шрифта в Mozilla Firefox
-    При просмотре заказа выдает ошибку 500 Internal Server Error
+    При просмотре заказа выдает ошибку 500 Internal Server Error на браузерах Chrome, Firefox, Yandex, Edge
 
     
