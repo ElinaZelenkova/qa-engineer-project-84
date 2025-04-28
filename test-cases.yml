@@ -155,7 +155,7 @@
     Доступны различные браузеры: Chrome, Firefox, Yandex, Edge
     Отключены блокировщики рекламы и другие расширения, влияющие на производительность
   test-data: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app/
+    URL тестируемого сайта https://hexlet-products-store.vercel.app
     Основные браузеры последней версии: Chrome, Firefox, Yandex, Edge
     Устройства: ПК
     Операционная система: Microsoft Windows
@@ -177,7 +177,7 @@
     Установлен медленный интернет
     Доступны различные браузеры: Chrome, Firefox, Yandex, Edge
   test-data: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app/
+    URL тестируемого сайта https://hexlet-products-store.vercel.app
     Медленный интернет 3G
     Основные браузеры последней версии: Chrome, Firefox, Yandex, Edge
     Устройства: ПК
@@ -199,14 +199,50 @@
     Сайт должен быть безопасным и защищать данные пользователя
   prerequisites: |
     Браузер последней версии: Chrome
+    Устройства: ПК
+    Операционная система: Microsoft Windows
   test-data: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app/
+    URL тестируемого сайта https://hexlet-products-store.vercel.app
+    <script>alert('Я отправил вам скрипт! Пришлите денег, пожалуйста :(')</script>
+  steps:
+    - Проверить наличие HTTPS-протокола в адресной строке
+    - Проверить сайт на защиту XSS-атак
+  expected-result: |
+    В адресной строке отображается HTTPS-протокол
+    Все формы ввода данных имеют защиту XSS-атак
+
+- summary: |
+    Проверка сайта на защиту XSS-атак
+  requirement: |
+    Отсутствие защиты от XSS-атак
+  prerequisites: |
     Браузер последней версии: Chrome
+    Устройства: ПК
+    Операционная система: Microsoft Windows
+  test-data: |
+    <script>alert('Я отправил вам скрипт! Пришлите денег, пожалуйста :(')</script>
+  steps:
+    - Ввести тестовые данные в форму обратной связи
+    - Отправить форму
+    - Проверить результат
+  expected-result: |
+    Выполнение JavaScript-кода на странице
+---
+- summary: |
+    Проверка сайта в мобильной версии
+  requirement: |
+    Сайт должен иметь мобильную версию
+  prerequisites: |
+    Браузер последней версии: Chrome
+  test-data: |
+    URL тестируемого сайта https://hexlet-products-store.vercel.app
+    Смартфон = iPhone 12 разрешение = 390x844
     Устройства: ПК
     Операционная система: Microsoft Windows
   steps:
     - Проверить наличие HTTPS-протокола в адресной строке
-    - Проверить сайт на атаку XSS
+    - Проверить сайт на защиту от SQL-инъекций и XSS-атак
   expected-result: |
     В адресной строке отображается HTTPS-протокол
-    Сайт защищен от атаки XSS
+    Все формы ввода данных имеют защиту от SQL-инъекций и XSS-атак
+    
