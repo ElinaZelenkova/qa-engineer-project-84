@@ -62,7 +62,6 @@
   environment: |
     Google Chrome 135.0.7049.115 (Официальная сборка), (64 бит)
     ОС Microsoft Windows 10
-    Скорость интернета: 3G
   steps-to-reproduce: |
     1. Открыть сайт https://hexlet-products-store.vercel.app в браузере
     2. Установить эмуляцию скорости интернета 3G через инструменты разработчика
@@ -78,12 +77,11 @@
 - summary: |
     Отсутствие адаптивной мобильной версии сайта
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
     Устройство: iPhone SE
     Браузер: Safari
     ОС: iOS 
   steps-to-reproduce: |
-    1. Открыть сайт на мобильном устройстве 
+    1. Открыть сайт https://hexlet-products-store.vercel.app на мобильном устройстве 
     2. Пролистать главную страницу
     3. Попытаться использовать основные функции сайта
     4. Проверить отображение контента в разных ориентациях экрана
@@ -99,8 +97,6 @@
 - summary: |
     Проблема отображения ценового слайдера в браузерах: Chrome, Yandex, Edge
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройство: ПК
     Браузеры: Chrome, Yandex, Edge
     ОС: Microsoft Windows
   steps-to-reproduce: |
@@ -136,11 +132,10 @@
 - summary: |
     Несовместимость сайта со смартфоном и планшетом
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
     iPhone SE разрешение: 375x667
     Surfase duo разрешение: 540x720
   steps-to-reproduce: |
-    1. Открыть сайт на смартфоне и ноутбуке  
+    1. Открыть сайт https://hexlet-products-store.vercel.app на смартфоне и ноутбуке  
   expected-result: |
     Оптимизированное отображение на всех устройствах, все элементы доступны формы работают.
   actual-result: |
@@ -152,13 +147,10 @@
 - summary: |
     Возможность ввода отрицательной цены 
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    Числа: -1, -5
   steps-to-reproduce: |
-    1. Открыть страницу сайта
+    1. Зайти на страницу сайта https://hexlet-products-store.vercel.app 
     2. Найти форму ввода цены
     3. Ввести отрицательное число
   expected-result: |
@@ -170,14 +162,10 @@
 - summary: |
     Ошибка при оформлении заказа 
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    Активный заказ 
-    Информация о заказе: товар, количество товара, сумма
   steps-to-reproduce: |
-    1. Открыть страницу сайта
+    1. Зайти на страницу сайта https://hexlet-products-store.vercel.app
     2. Любой товар добавить в корзину
     3. Перейти в корзину
     4. Нажать на кнопку "Оформить заказ"
@@ -190,19 +178,15 @@
 - summary: |
     Ошибка при оформлении заказа 
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    Активный заказ 
-    Информация о заказе: товар, количество товара, сумма
   steps-to-reproduce: |
-    1. Открыть страницу сайта
+    1. Зайти на страницу сайта https://hexlet-products-store.vercel.app
     2. Любой товар добавить в корзину
     3. Перейти в корзину
     4. Нажать на кнопку "Оформить заказ"
   expected-result: |
-    Оформление заказабез ошибок
+    Оформление заказа без ошибок
   actual-result: |
     При оформлении заказа выдает ошибку в консоли "500 Internal Server Error"
     Ошибка изображена на скриншоте
@@ -210,22 +194,13 @@
 - summary: |
     Отсутствие функционала выбора количества товара 
   environment: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    Активный заказ 
-    Информация о заказе: товар, количество товара, сумма
   steps-to-reproduce: |
-    1. Открыть страницу сайта
-    2. Любой товар добавить в корзину
-    3. Перейти в корзину
-    4. Нажать на кнопку "Оформить заказ"
+    1. Зайти на страницу сайта https://hexlet-products-store.vercel.app
+    2. Открыть карточку любого товара на сайте
   expected-result: |
-    Оформление заказабез ошибок
+    Можно выбирать количество товара
   actual-result: |
-    При оформлении заказа выдает ошибку в консоли "500 Internal Server Error"
+    Отсутствует поле ввода количества товара
     Ошибка изображена на скриншоте
-
-    
-    
