@@ -97,12 +97,12 @@
     Отсутствие прокрутки в фильтре цена
 
 - summary: |
-    Проблема отображения элементов интерфейса в браузере Mozilla Firefox
+    Проблема отображения ценового слайдера в браузерах: Chrome, Yandex, Edge
   environment: |
     URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Устройство: iPhone SE
-    Браузер: Safari
-    ОС: iOS 
+    Устройство: ПК
+    Браузер: Chrome, Firefox, Yandex, Edge
+    ОС: Microsoft Windows
   steps-to-reproduce: |
     1. Открыть сайт на мобильном устройстве 
     2. Пролистать главную страницу
