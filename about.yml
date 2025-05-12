@@ -1,14 +1,15 @@
 ---
-name: Elina Zelenkova # Ваше имя
+name: Elina Zelenkova
 job: QA Engineer
 level: junior
 email: shaposhnikova.elina@mail.ru
 description: |
-  Когда посещает муза могу написать картину
+  Умение работать в команде.
+  Когда меня "посещает муза" могу написать картину.
   
 
   
-skills: # Список навыков в виде списка, можете написать сюда что-то свое
+skills:
   - Функциональное тестирование
   - Написание тест-кейсов
   - Linux
