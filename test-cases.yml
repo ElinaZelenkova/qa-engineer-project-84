@@ -39,12 +39,10 @@
   test-data: |
     Категории товаров: beauty, fragrances, furniture, groceries
     Производители: Essence, Calvin Klein, Chanel, Dior, Dolce & Gabbana, Gucci
-    В наличии
     Диапозон цен: от 0 до 100000000000000000000000000000000000000000000000000000000000000000000000000
   steps:
     - Выбираем категорию "fragrances"
     - Выбираем производителя "Calvin Klein"
-    - Выбираем "в наличии"
     - Выбираем диапозон цен: от 0 до 50
   expected-result: |
     Отображается список товаров, соответствующих всем установленным фильтрам
@@ -59,11 +57,9 @@
   test-data: |
     Категории товаров: beauty, fragrances, furniture, groceries
     Производители: Essence, Glamour Beauty, Velvet Touch, Chic Cosmetics, Nail Couture, Calvin Klein, Chanel, Dior, Dolce & Gabbana, Gucci, Annibale Colombo, Furniture Co., Knoll, Bath Trends
-    В наличии
     Диапозон цен: от 0 до 33399.85999999999
   steps:
     - Выбираем категорию "groceries"
-    - Выбираем "в наличии"
     - Выбираем диапозон цен: от 0 до 100
   expected-result: |
     Отображается список товаров не соответствующие категории "groceries"
@@ -77,12 +73,10 @@
     Доступен просмотр карточки товара
   test-data: |
    Категории товаров: beauty, fragrances, furniture, groceries
-   В наличии
    Товар "Eyeshadow Palette with Mirror"
   steps:
     - Открыть главную страницу сайта
     - Выбрать категорию товара "beauty"
-    - Выбираем "в наличии"
     - Нажать на карточку товара "Eyeshadow Palette with Mirror" для просмотра подробно информации
   expected-result: |
     При клике на карточку открывается детальная страница товара
@@ -97,12 +91,10 @@
     Доступен просмотр карточки товара
   test-data: |
    Категории товаров: beauty, fragrances, furniture, groceries
-   В наличии
-   Товар "Soft Drinks"
+   Товар: "Soft Drinks"
   steps:
     - Открыть главную страницу сайта
     - Выбрать категорию товара "groceries"
-    - Выбираем "в наличии"
     - Нажать на карточку товара "Soft Drinks" для просмотра подробной информации
   expected-result: |
     При клике на карточку открывается страница без конкретного описания товара 
@@ -416,7 +408,7 @@
     Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    1, 5
+    Число: положительное число
   steps:
     - Открыть форму ввода цены 
     - Ввести положительное число
@@ -435,7 +427,7 @@
     Устройства: ПК
     Операционная система: Microsoft Windows
     Браузер: Google Chrome версия 135.0.7049.115
-    Числа: -1, -5
+    Число: отрицательное число
   steps:
     - Открыть форму ввода цены 
     - Ввести отрицательное число
