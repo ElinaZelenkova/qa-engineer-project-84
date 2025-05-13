@@ -198,7 +198,7 @@
     Все формы ввода данных имеют защиту XSS-атак
 
 - summary: |
-    Проверка сайта на защиту XSS-атак
+    Проверка сайта на отсутствие защиты XSS-атак
   requirement: |
     Отсутствие защиты от XSS-атак
   prerequisites: |
@@ -222,7 +222,7 @@
     Открыта страница сайта
   test-data: |
     URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Смартфон = iPhone 14 Pro Max разрешение = 430x932
+    Смартфон: iPhone 14 Pro Max разрешение 1290 x 2796
     Операционная система: iOS
     Браузер: Safari
   steps:
@@ -244,7 +244,7 @@
     Открыта страница сайта
   test-data: |
     URL тестируемого сайта https://hexlet-products-store.vercel.app
-    Смартфон = iPhone SE разрешение = 375x677
+    Смартфон: iPhone SE разрешение 1334 x 2208
     Операционная система: iOS
     Браузер: Safari
   steps:
