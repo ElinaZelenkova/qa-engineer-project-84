@@ -39,7 +39,6 @@
   test-data: |
     Категории товаров: beauty, fragrances, furniture, groceries
     Производители: Essence, Calvin Klein, Chanel, Dior, Dolce & Gabbana, Gucci
-    Диапозон цен: от 0 до 100000000000000000000000000000000000000000000000000000000000000000000000000
   steps:
     - Выбираем категорию "fragrances"
     - Выбираем производителя "Calvin Klein" 
@@ -56,7 +55,6 @@
   test-data: |
     Категории товаров: beauty, fragrances, furniture, groceries
     Производители: Essence, Glamour Beauty, Velvet Touch, Chic Cosmetics, Nail Couture, Calvin Klein, Chanel, Dior, Dolce & Gabbana, Gucci, Annibale Colombo, Furniture Co., Knoll, Bath Trends
-    Диапозон цен: от 0 до 33399.85999999999
   steps:
     - Выбираем категорию "groceries"
   expected-result: |
@@ -81,7 +79,7 @@
     На детальной странице отображаются: название товара, рейтинг, цена с учетом скидки, процент скидки, товарный остаток, фотография, описание товара
 
 - summary: |
-    Проверка просмотра малоинформативной карточки товара 
+    Проверка карточки товара без подробного описания 
   requirement: |
     Пользователь должен получить малоинформативную карточку товара
   prerequisites: |
