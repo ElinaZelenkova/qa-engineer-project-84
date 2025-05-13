@@ -73,7 +73,7 @@
     Доступен просмотр карточки товара
   test-data: |
    Категории товаров: beauty, fragrances, furniture, groceries
-   Товар "Eyeshadow Palette with Mirror"
+   Товар: "Eyeshadow Palette with Mirror"
   steps:
     - Открыть главную страницу сайта
     - Выбрать категорию товара "beauty"
@@ -193,8 +193,7 @@
     Устройства: ПК
     Операционная система: Microsoft Windows
   test-data: |
-    URL тестируемого сайта https://hexlet-products-store.vercel.app
-    <script>alert('Я отправил вам скрипт! Пришлите денег, пожалуйста :(')</script>
+    URL тестируемого сайта https://hexlet-products-store.vercel.app <script>alert('Я отправил вам скрипт! Пришлите денег, пожалуйста :(')</script>
   steps:
     - Проверить наличие HTTPS-протокола в адресной строке
     - Проверить сайт на защиту XSS-атак
